@@ -1,0 +1,24 @@
+<!doctype html>
+<html> 
+    <head>
+        <script src="code.jc.js"></script>
+        <title>Name bruh.img</title>
+    </head>
+    <body>`
+        <h1> [bruh] a slang term</h1>
+        <p>a male friend (often used as a form of address).</p>
+        <button id="bruh"
+            onClick="alert('Bruh');">
+        Click Me</button>
+
+        <img src = https://i1.sndcdn.com/avatars-U3ir1j6Qhg3QxaII-zPG37Q-t500x500.jpg>
+<p>
+    Countdown: <span id="displayCountdown"> ready for takeoff</span>
+</p>
+<script> 
+    let x = document.getElementById("displayCountdown");
+    runTime(x); 
+</script>
+    
+    </body>
+</html>
