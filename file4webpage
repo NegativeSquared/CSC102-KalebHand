@@ -3,75 +3,18 @@ function runTime (x){
     var timeout = 5000;
     
 
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
+    for(i=10; i > 1; i--);{
 
-    setTimeout(function(){
+        setTimeout(function(){
         x.innerHTML = currTime
         currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
+        }, timeout);
+        timeout = timeout + 5000;
     
-     setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-    
-    setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5; 
-    }, timeout);
-    timeout = timeout + 5000;
-    
-     
-    setTimeout(function(){
+    if(1 > i);{
+        setTimeout(function(){
         x.innerHTML = "Blastoff"
-    }, timeout);
+        }, timeout);
+    }
+}
 }
