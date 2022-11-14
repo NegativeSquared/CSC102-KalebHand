@@ -1,28 +1,40 @@
 function getUserInput(){
     do{
-        
+
             carmake = prompt("car make: ");
             carmodel= prompt("car Model: ");
 
             car = carmake + " " + carmodel;
 
        }   while(car.lenght > 15);
-    
+
 }
-function runTime (x){
-    currTime = 50; 
+function runTime(x){
+    var currTime = 50; 
     var timeout = 5000;
-    
+        
+            for(i=0;i<11;i++){
+            
 
-    for(i=10; i > 1; i--);{
+        IntervalID=[i] = setTimeout(function(){
+            if( currTime == 0){
+                x.innerHTML = currTime
+                alert("Blastoff");
+            }
+            else if( currTime < 25 ){
+                x.innerHTML = "Warning Less Than Half Way To Launch, Time Left = " + CurrTime
 
-        setTimeout(function(){
-        x.innerHTML = currTime
-        currTime = currTime - 5;
-        if( currTime == 0){}
-        }, timeout);
-        timeout = timeout + 5000;
-    
+            }
+            else {
+                x.innerHTML = currtime
+            }
+            currtime = currTime - 5;
+        },timeout);
+        timeout = timeout + 1000;
 
     }
 }
+
+var IntervalID = new Array();
+
+runTime(document.getElementById("displayCountdown"));
