@@ -37,7 +37,7 @@ function runTime(x){
         timeout = timeout + 1000;
 
     }
-    alert("tst2")
+    
 }
 
 
