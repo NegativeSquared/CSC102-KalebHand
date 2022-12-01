@@ -12,13 +12,16 @@
         Click Me</button>
 
         <img src = https://i1.sndcdn.com/avatars-U3ir1j6Qhg3QxaII-zPG37Q-t500x500.jpg>
+<br>
+        <input type="button " id="buttonStart" value=" start " onclick=" startButton();">
+        <input type="button " id="buttonStop" value=" stop " disabled="true" onclick=" stopButton();">
 <p>
     Countdown: <span id="displayCountdown"> ready for takeoff</span>
 
 <script> 
     getInput();
     let x = document.getElementById("displayCountdown");
-    runTime(x); 
+    
 </script>
 </p>
     </body>
