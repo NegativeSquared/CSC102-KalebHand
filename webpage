@@ -18,6 +18,10 @@
 <p>
     Countdown: <span id="displayCountdown"> ready for takeoff</span>
 
+    <audio controls>
+        <source scr="movie_1.mp3" type = "audio/mp3">
+    </audio>
+
 <script> 
     getInput();
     let x = document.getElementById("displayCountdown");
