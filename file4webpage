@@ -1,6 +1,5 @@
 
 
-var IntervalID = new Array();
 
 function runTime(x){
     
@@ -28,6 +27,22 @@ function runTime(x){
 
     }
 } 
+var IntervalID = new Array();
+
+function startButton(){
+    document.getElementById("buttonStart").disabled = true;
+    document.getElementById("buttonStop").disabled = false;
+    runTime(document.getElementById("displayCountdown"))
+}
+function stopButton(){
+    document.getElementById("buttonStart").disabled = false;
+    document.getElementById("buttonStop").disabled = true;
+
+    for(i=0; i<11;i++){
+        clearTimeout(IntervalID[i]);
+    }
+}
+
     function getInput(){
         do{
     
