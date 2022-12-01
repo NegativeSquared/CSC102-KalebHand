@@ -1,7 +1,7 @@
 <!doctype html>
 <html> 
     <head>
-        <script src="code.jc.js"></script>
+        <script src="code.js"></script>
         <title>Name bruh.img</title>
     </head>
     <body>`
@@ -16,7 +16,7 @@
     Countdown: <span id="displayCountdown"> ready for takeoff</span>
 
 <script> 
-    getUserInput();
+    getInput();
     let x = document.getElementById("displayCountdown");
     runTime(x); 
 </script>
