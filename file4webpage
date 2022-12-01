@@ -1,21 +1,11 @@
-function getUserInput(){
-    do{
 
-            carmake = prompt("car make: ");
-            carmodel= prompt("car Model: ");
-
-            car = carmake + " " + carmodel;
-
-       }   while(car.length > 15);
-
-}
 
 var IntervalID = new Array();
 
 function runTime(x){
     
     var currTime = 50; 
-    var timeout = f000;
+    var timeout = 5000;
         
             for(i=0;i<11;i++){
                 
@@ -37,9 +27,26 @@ function runTime(x){
         timeout = timeout + 1000;
 
     }
+} 
+    function getInput(){
+        do{
     
-}
+                FirstName = prompt("First Name: ");
+                LastName= prompt("Last Name: ");
+    
+                FullName = FirstName + " " + LastName;
+    
+              if(FullName.length > 20){
+                alert("Name too long")
+           };
+        }
+        while(FullName.length > 20);
 
-
-
-//runTime(document.getElementById("displayCountdown"));
+        do{
+            Badge= prompt("Pick an number 1-999")
+            if(Badge > 1000){
+                alert("Badge number incorect")
+            }
+        }
+        while(Badge > 20);
+    }
