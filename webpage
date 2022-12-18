@@ -2,16 +2,22 @@
 <html> 
     <head>
         <script src="code.js"></script>
-        <title>Name bruh.img</title>
+        <title>Name UAT_Space.jpg</title>
+        <style>
+            table, th, td{
+                border: 1px solid black;
+                padding: 5px;
+            }
+        </style>
     </head>
-    <body>`
-        <h1> [bruh] a slang term</h1>
-        <p>a male friend (often used as a form of address).</p>
-        <button id="bruh"
-            onClick="alert('Bruh');">
+    <body>
+        <h1> UAT Space Program</h1>
+        <p>UAT very own space station.</p>
+        <button id="Launch Prep"
+            onClick="alert('Preparing for Launch');">
         Click Me</button>
 
-        <img src = https://i1.sndcdn.com/avatars-U3ir1j6Qhg3QxaII-zPG37Q-t500x500.jpg>
+        <img src = UAT_Space.jpg>
 <br>
         <input type="button " id="buttonStart" value=" start " onclick=" startButton();">
         <input type="button " id="buttonStop" value=" stop " disabled="true" onclick=" stopButton();">
@@ -22,11 +28,170 @@
         <source scr="movie_1.mp3" type = "audio/mp3">
     </audio>
 
+    <body onload="startTime()">
+    <h2>JavaScript Clock</h2>
+
+    <div id="txt"></div>
+    
+    <script>
+
+    function startTime() {
+      const today = new Date();
+      let h = today.getHours();
+      let m = today.getMinutes();
+      let s = today.getSeconds();
+      m = checkTime(m);
+      s = checkTime(s);
+      document.getElementById('txt').innerHTML =  h + ":" + m + ":" + s;
+      setTimeout(startTime, 1000);
+    }
+    
+    function checkTime(i) {
+      if (i < 10) {i = "0" + i};  // add zero in front of numbers < 10
+      return i;
+    }
+    </script>
+    </body>
+
 <script> 
     getInput();
     let x = document.getElementById("displayCountdown");
     
 </script>
+
+<table id="data">
+    <thead>
+        <td>Data Type:</td>
+        <td>Reading:</td>
+    </thead>
+    <tbody>
+        <tr id="Time_elapsed">
+            <td>Time elapsed:</td>
+            <td>1210s</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Latitud">
+            <td>Latitud:</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Longitude">
+            <td>Longitude:</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="GPS_Altitude">
+            <td>GPS Altitude:</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="BMP_Altitude">
+            <td>BMP Sensor Altitude:</td>
+            <td>30383.04</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="BMP_Pressure">
+            <td>BMP Sensor Presure:</td>
+            <td>2.34</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="BMP_Temperature">
+            <td>BMP Sensor Temperature:</td>
+            <td>0</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Digital_Temperature">
+            <td>Digital Sensor Temperature:</td>
+            <td>24</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="CSS_Temperature">
+            <td>CSS Sensor Temperature:</td>
+            <td>32.48</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="CSS_eCo2">
+            <td>CSS Sensor eCO2:</td>
+            <td>422</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="CSS_TVOC">
+            <td>CSS sensor TVOC:</td>
+            <td>3</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="UV">
+            <td>UV:</td>
+            <td>6</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Accel_X">
+            <td>Accel X:</td>
+            <td>-0.75</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Accel_Y">
+            <td>Accel Y:</td>
+            <td>-0.77</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Accel_Z">
+            <td>Accel Z:</td>
+            <td>9.35</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Magnetic_X">
+            <td>Magnetic X:</td>
+            <td>-0.08</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Magnetic_Y">
+            <td>Magnetic Y:</td>
+            <td>0.36</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Magnetic_Z">
+            <td>Magnetic Z:</td>
+            <td>-0.53</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Gyro_X">
+            <td>Gyro X:</td>
+            <td>4.44</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Gyro_Y">
+            <td>Gyre Y:</td>
+            <td>-0.95</td>
+        </tr>
+    </tbody>
+    <tbody>
+        <tr id="Gyro_Z">
+            <td>Gyro Z</td>
+            <td>1.72</td>
+        </tr>
+    </tbody>
+
+</table>
 </p>
     </body>
 </html>
