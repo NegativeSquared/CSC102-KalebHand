@@ -1,6 +1,7 @@
 <!doctype html>
 <html> 
     <head>
+        <a href="ImageView.html">Home</a>&nbsp; | &nbsp;<a href="ImageView.html">Space Pictures</a>&nbsp; | &nbsp;<a href="WebPageBlastoff.html">Space Program</a>
         <script src="code.js"></script>
         <title>Name UAT_Space.jpg</title>
         <style>
